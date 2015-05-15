@@ -1,0 +1,35 @@
+* {
+	border: 1px solid green;
+}
+
+html, body {
+	height: 100%;
+}
+
+header {
+	font-family: 'Lucida Calligraphy', cursive;
+	font-size: 3em;
+	text-align: center;
+}
+
+.main-container {
+	height: 80%;
+	width: 80%;
+	margin: 0 auto;
+	background-color: lightgreen;
+	padding: 25px;
+	text-align: center;
+}
+
+	.mini-container {
+		height: 15em;
+		width: 15em;
+		background-color: lightyellow;
+		display: inline-block;
+		margin: 10px;
+		text-align: center;
+	}
+
+	.img-responsive {
+		height: 12em;
+	}
