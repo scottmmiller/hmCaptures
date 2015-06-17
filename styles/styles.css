@@ -1,29 +1,67 @@
-* {
+/** {
 	border: 1px solid green;
+}*/
+
+html {
+	height: 100%;
+	background-image: url("../images/mint-herringbone-fabric_thumb.jpg");
+	background-repeat: repeat;
+	padding: 7em;
 }
 
-html, body {
+body {
 	height: 100%;
 }
 
 header {
-	font-family: 'Lucida Calligraphy', cursive;
-	font-size: 3em;
+	font-family: 'Meddon', 'Lucida Calligraphy', cursive;
+	font-size: 2em;
+	background-color: white;
 	text-align: center;
+	padding: .5em;
+	/*width: 80%;
+	height: 10%;*/
 }
 
+.header {
+	line-height: 10%;
+	vertical-align: middle;
+}
+
+.navbar {
+	font-family: 'Megrim', cursive;
+	font-size: 18px;
+	text-decoration: none;
+	/*width: 10%;*/
+	/*height: 100%;*/
+	/*position: fixed;*/
+	/*left: 0px;
+	top: 100px;*/
+}
+
+	.navbar a {
+		color: rgb(0,0,0);
+	}
+
+/*.navbar ul {
+	list-style-type: none;
+	padding: 5px;
+	margin: 0px;
+}*/
+
 .main-container {
-	height: 80%;
-	width: 80%;
+	height: 100%;
+	width: 100%;
 	margin: 0 auto;
-	background-color: lightgreen;
-	padding: 25px;
+	background-color: white;
+	/*padding: 60px;*/
 	text-align: center;
+	overflow: auto;
 }
 
 	.mini-container {
-		height: 15em;
-		width: 15em;
+		width: 12em;
+		height: 13em;
 		background-color: lightyellow;
 		display: inline-block;
 		margin: 10px;
@@ -31,5 +69,5 @@ header {
 	}
 
 	.img-responsive {
-		height: 12em;
+		height: 10em;
 	}
