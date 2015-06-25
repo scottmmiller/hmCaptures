@@ -1,0 +1,33 @@
+{
+  "name": "hmCaptures",
+  "version": "0.0.0",
+  "description": "Haley's Photo Site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottmmiller/hmCaptures.git"
+  },
+  "keywords": [
+    "hmCaptures",
+    "pics",
+    "photos",
+    "Haley"
+  ],
+  "author": "Scott M Miller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottmmiller/hmCaptures/issues"
+  },
+  "homepage": "https://github.com/scottmmiller/hmCaptures",
+  "dependencies": {
+    "body-parser": "^1.13.1",
+    "express": "^4.13.0",
+    "express-session": "^1.11.3",
+    "mongoose": "^4.0.6",
+    "passport": "^0.2.2"
+  }
+}
