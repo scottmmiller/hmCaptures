@@ -23,6 +23,16 @@ header {
 	height: 10%;*/
 }
 
+header a {
+	text-decoration: none;
+	color: rgb(0,0,0);
+}
+
+header a:hover {
+	text-decoration: none;
+	color: rgb(0,0,0);
+}
+
 .header {
 	line-height: 10%;
 	vertical-align: middle;
@@ -32,6 +42,7 @@ header {
 	font-family: 'Megrim', cursive;
 	font-size: 18px;
 	text-decoration: none;
+	text-align: center;
 	/*width: 10%;*/
 	/*height: 100%;*/
 	/*position: fixed;*/
@@ -49,6 +60,11 @@ header {
 	margin: 0px;
 }*/
 
+/*ng-view {
+	height: 100%;
+	width: 100%;
+}*/
+
 .main-container {
 	height: 100%;
 	width: 100%;
@@ -60,9 +76,9 @@ header {
 }
 
 	.mini-container {
-		width: 12em;
+		width: 10em;
 		height: 13em;
-		background-color: lightyellow;
+		background-color: lightblue;
 		display: inline-block;
 		margin: 10px;
 		text-align: center;

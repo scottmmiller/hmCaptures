@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='hmCaptures'>
+<html lang="en" ng-app="hmCaptures">
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
@@ -8,65 +8,35 @@
 	<link rel="stylesheet" href="styles/styles.css">
 	<title> Captures Photography </title>
 </head>
-<body ng-controller='MainController as Main'>
+<body >
+
+	<div class="heading-container">
+		<header> <a href='/home'> <span class='header'>
+	    Captures Photography
+	  </span> </a> </header>
+
+	  <div class="navbar">
+	    <a href=''> <span> About Me </span> </a>
+	    <a href=''> <span> Blog </span> </a>
+	    <a href=''> <span> Pricing </span> </a>
+	    <a href=''> <span> Proofs </span> </a>
+	    <a href=''> <span> Contact </span> </a>
+	  </div>
+
+	</div>		<!-- end of heading-container -->
 
 	<div class="main-container">
-		<header> <span class='header'>
-			Captures Photography
-		</span> </header>
-
-		<div class="navbar">
-			<a href=''> <span> About Me </span> </a>
-			<a href=''> <span> Blog </span> </a>
-			<a href=''> <span> Pricing </span> </a>
-			<a href=''> <span> Proofs </span> </a>
-			<a href=''> <span> Contact </span> </a>
-		</div>
-
-		<span class='mini-container babies'>Babies
-			<br />
-			<a href=''> <img src='http://capturesphoto.squarespace.com/storage/haley%20miller1%20blog.jpg?__SQUARESPACE_CACHEVERSION=1318641874499' class='img-thumbnail img-responsive babies'>
-			</a>
-		</span>
-		<span class='mini-container bridal'>Bridal
-			<br />
-			<a href=''> <img src='http://capturesphoto.squarespace.com/storage/haley%20miller1%20blog.jpg?__SQUARESPACE_CACHEVERSION=1318641874499' class='img-thumbnail img-responsive bridal'>
-			</a>
-		</span>
-		<span class='mini-container children'>Children
-			<br />
-			<a href=''> <img src='http://capturesphoto.squarespace.com/storage/haley%20miller1%20blog.jpg?__SQUARESPACE_CACHEVERSION=1318641874499' class='img-thumbnail img-responsive children'>
-			</a>
-		</span>
-		<span class='mini-container engagements'>Engagements
-			<br />
-			<a href=''> <img src='http://capturesphoto.squarespace.com/storage/haley%20miller1%20blog.jpg?__SQUARESPACE_CACHEVERSION=1318641874499' class='img-thumbnail img-responsive engagements'>
-			</a>
-		</span>
-		<span class='mini-container family'>Family
-			<br />
-			<a href=''> <img src='http://capturesphoto.squarespace.com/storage/haley%20miller1%20blog.jpg?__SQUARESPACE_CACHEVERSION=1318641874499' class='img-thumbnail img-responsive family'>
-			</a>
-		</span>
-		<span class='mini-container portrait'>Portrait
-			<br />
-			<a href=''> <img src='http://capturesphoto.squarespace.com/storage/haley%20miller1%20blog.jpg?__SQUARESPACE_CACHEVERSION=1318641874499' class='img-thumbnail img-responsive portrait'>
-			</a>
-		</span>
-		<span class='mini-container wedding'>Wedding
-			<br />
-			<a href=''> <img src='http://capturesphoto.squarespace.com/storage/haley%20miller1%20blog.jpg?__SQUARESPACE_CACHEVERSION=1318641874499' class='img-thumbnail img-responsive wedding'>
-			</a>
-		</span>
-	</div>		<!-- END of main-container -->
+		<div ng-view> </div>
+	</div>		<!-- end of main-container -->
 
 	<script type="text/javascript" src='bower_components/angular/angular.js'></script>
 	<script type="text/javascript" src='bower_components/jquery/dist/jquery.js'></script>
+	<script type="text/javascript" src='bower_components/angular-route/angular-route.js'></script>
 	<script type="text/javascript" src='bower_components/bootstrap/dist/js/bootstrap.js'></script>
 
-	<script type="text/javascript" src='js/app.js'>
-	<script type="text/javascript" src='js/MainController.js'>
-	<script type="text/javascript" src='js/mainService.js'>
+	<script type="text/javascript" src='js/app.js'></script>
+	<script type="text/javascript" src='js/MainController.js'></script>
+	<script type="text/javascript" src='js/mainService.js'></script>
 
 	</script>
 </body>
