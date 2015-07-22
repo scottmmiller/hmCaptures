@@ -4,6 +4,14 @@
 //
 //   $scope.test = "TEST";
 //
+//   $scope.pic = function() {
+//             console.log("VM PIC")
+//             return mainService.getPics()
+//               .then(function(response) {
+//                 console.log(response)
+//               });
+//   }
+//
 // });
 
 
@@ -20,6 +28,13 @@
     });
 
       vm.test = "TEST";
+
+      vm.getPic = function() {
+        mainService.getPic()
+          .then(function(response) {
+            console.log("Cntrl response: " + response)
+          });
+      };
 
   };    //end of MainController
 

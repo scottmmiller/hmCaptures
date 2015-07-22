@@ -8,7 +8,7 @@
       .when("/", {
         templateUrl: "../views/mainView.html",
         controller: 'MainController'
-        // controllerAs: 'main'
+        controllerAs: 'sm'
       })
       .otherwise('/');
   };
