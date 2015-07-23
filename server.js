@@ -20,7 +20,7 @@ console.log("hmCaptures Server running on: " + port);
 // // var Mongoose = require("mongoose");
 // // var Session = require("express-session");
 // //
-var app = Express();
+// var app = Express();
 // var port = process.env.HMCAPTURES_PORT || 9999;
 //   console.log("EXPRESS_PORT: " + port)
 // // var mongoUri = "";
