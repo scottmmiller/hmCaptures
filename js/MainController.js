@@ -31,7 +31,7 @@
 
       vm.getPic = mainService.getPic()
           .then(function(response) {
-            console.log("Cntrlr response: ", response);
+            console.log("MainCntrlr response: ", response);
             vm.pic = response;
                console.log("vm.pic.url: ", vm.pic.url)
             // vm.details = response.explanation;

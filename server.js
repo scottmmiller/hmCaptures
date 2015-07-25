@@ -11,67 +11,26 @@ var app = connect();
 
 var port = process.env.HMCAPTURES_PORT || 9999;
 
-
+// var onRequest = function(req, res) {
+// 	if(req.method === "GET") {
+// 		res.writeHead(200, {
+// 			'Connection': 'close',
+// 			'Content-Type': 'application/json',
+// 			'Access-Control-Allow-Origin': '*'
+// 		})
+// 		res.end(JSON.stringify({message: randomMessage(messages)}));
+// 	}
+// 	if(req.method === 'OPTIONS') {
+// 		res.writeHead(200, {
+// 			'Connection': 'close',
+// 			'Content-Type': 'application/json',
+// 			'Access-Control-Allow-Origin': '*',
+// 			'Access-Control-Allow-Methods': 'OPTIONS, GET, POST',
+// 			'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+// 		});
+// 		res.end();
+// 	}
+// }
 
 app.use(serveStatic(__dirname)).listen(port);
-console.log("hmCaptures Server running on: " + port);
-
-// // var Passport = require("passport");
-// // var Mongoose = require("mongoose");
-// // var Session = require("express-session");
-// //
-// var app = Express();
-// var port = process.env.HMCAPTURES_PORT || 9999;
-//   console.log("EXPRESS_PORT: " + port)
-// // var mongoUri = "";
-// //
-// //    *****MIDDLEWARE*****
-// app.use(Session ({
-//   secret: "hmCaptures",
-//   resave: true,
-//   saveUninitialized: true
-// }));
-// //
-// // //    *****STRATEGIES*****
-// //
-// //    *****CONNECTIONS*****
-// // Mongoose.connect(mongoUri, function() {
-// //   console.log("DB connected on " + mongoUri)
-// // })
-// //
-// app.listen(port, function() {
-//   if(port === process.env.EXPRESS_PORT) {
-//     console.log("Listening on EXPRESS_PORT");
-//   } else {
-//     console.log("Listening on 9999")
-//   }
-// })
-//
-// // var http = require("http");
-// //
-// // http.createServer(function(req, res) {
-
-// // }).listen(80);
-// //
-// //    ************************************
-// //
-// //  JOE EAMES: PLURALSIGHT TUTORIAL
-// var Express = require("express");
-//
-// var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-//
-// var app = Express();
-//
-// // app.set('views', __dirname + '/views');
-// // app.set('view engine', 'html');
-//
-// app.get("*", function(req, res) {
-//   // res.render('index');
-// });
-//
-// var port = 9999;
-// app.listen(port, function() {
-//   console.log("Server running on: " + port);
-// });
-//
-// //   *********************
+   console.log("hmCaptures Server running on: " + port);
