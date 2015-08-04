@@ -1,0 +1,187 @@
+/** {
+	border: 1px solid green;
+}*/
+
+html {
+	height: 100%;
+	background-image: url("../images/mint-herringbone-fabric_thumb.jpg");
+	background-repeat: repeat;
+	padding: 7em;
+	/*padding-top: 0;*/
+}
+
+body {
+	height: 100%;
+}
+
+/*.heading-containter {
+	position: fixed;
+	top: 5px;
+	background-color: black;
+	opacity: 0.5;
+}*/
+
+header {
+	font-family: 'Meddon', 'Lucida Calligraphy', cursive;
+	font-size: 2.5em;
+	background-color: white;
+	text-align: center;
+	padding: .5em;
+	height: auto;
+	/*width: 80%;
+	height: 10%;*/
+}
+
+header a {
+	text-decoration: none;
+	color: rgb(0,0,0);
+}
+
+header a:hover {
+	text-decoration: none;
+	color: rgb(0,0,0);
+}
+
+.header {
+	line-height: 10%;
+	vertical-align: middle;
+}
+
+.navbar {
+	font-family: 'Megrim', cursive;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 0;
+	min-height: 30px;
+	height: auto;
+	/*width: 10%;*/
+	/*height: 100%;*/
+	/*position: fixed;*/
+	/*left: 0px;
+	top: 100px;*/
+}
+
+	.navbar a {
+		color: rgb(0,0,0);
+	}
+
+/*.navbar ul {
+	list-style-type: none;
+	padding: 5px;
+	margin: 0px;
+}*/
+
+/*ng-view {
+	height: 100%;
+	width: 100%;
+}*/
+
+.main-container {
+	height: 75%;
+	margin: 0 auto;
+	background-color: white;
+	/*padding: 60px;*/
+	text-align: center;
+	overflow: auto;
+}
+
+	.mini-container {
+		width: 10em;
+		height: 13em;
+		background-color: lightblue;
+		display: inline-block;
+		margin: 10px;
+		text-align: center;
+	}
+
+	.img-responsive {
+		height: 10em;
+	}
+
+	.hmCaptures-carousel {
+		height: 100%;
+	}
+
+	/*.carousel-inner {
+		height: 100%;
+	}*/
+
+	.carousel-image {
+		max-height: 25em;
+		display: block;
+		margin: 0 auto;
+	}
+
+	/*@media (min-width: 700px) and (max-width: 1100px) {
+		.carousel-image {
+			max-height: 25em;
+			display: block;
+			margin: 0 auto;
+		}
+	}*/
+
+	/*
+	  Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+	  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+	  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+	  Inspired from:  http://codepen.io/Rowno/pen/Afykb
+	*/
+	.carousel-fade .carousel-inner .item {
+	  opacity: 0;
+	  transition-property: opacity;
+	  transition-duration: 2s;
+	  transition-timing-function: linear;
+	}
+
+	.carousel-fade .carousel-inner .active {
+	  opacity: 1;
+	}
+
+	.carousel-fade .carousel-inner .active.left,
+	.carousel-fade .carousel-inner .active.right {
+	  left: 0;
+	  opacity: 0;
+	  z-index: 1;
+	}
+
+	.carousel-fade .carousel-inner .next.left,
+	.carousel-fade .carousel-inner .prev.right {
+	  opacity: 1;
+	}
+
+	.carousel-fade .carousel-control {
+	  z-index: 2;
+	}
+
+	/*
+	  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+	  Need to override the 3.3 new styles for modern browsers & apply opacity
+	*/
+	@media all and (transform-3d), (-webkit-transform-3d) {
+	    .carousel-fade .carousel-inner > .item.next,
+	    .carousel-fade .carousel-inner > .item.active.right {
+	      opacity: 0;
+	      -webkit-transform: translate3d(0, 0, 0);
+	              transform: translate3d(0, 0, 0);
+	    }
+	    .carousel-fade .carousel-inner > .item.prev,
+	    .carousel-fade .carousel-inner > .item.active.left {
+	      opacity: 0;
+	      -webkit-transform: translate3d(0, 0, 0);
+	              transform: translate3d(0, 0, 0);
+	    }
+	    .carousel-fade .carousel-inner > .item.next.left,
+	    .carousel-fade .carousel-inner > .item.prev.right,
+	    .carousel-fade .carousel-inner > .item.active {
+	      opacity: 1;
+	      -webkit-transform: translate3d(0, 0, 0);
+	              transform: translate3d(0, 0, 0);
+	    }
+	}
+
+	footer {
+		text-align: center;
+		vertical-align: middle;
+	}

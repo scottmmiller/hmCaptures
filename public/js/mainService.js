@@ -1,33 +1,33 @@
-angular.module("hmCaptures")
-
-  .service("mainService", mainService);
+angular
+   .module("hmCaptures")
+   .service("mainService", mainService);
 
 function mainService($http, $q, $location) {
 
       //FreeImages.pictures
-   this.getPic = function() {
-
-      var deferred = $q.defer();
-      var imgUrl =       "http://freeimages.pictures/api/user/5477093893103302/?keyword=landscape[&sources={flickr|wikimedia|pixabay|morguefile|google|openclipart}&format={json}]";
-
-      $http({
-            method: "GET",
-            url: imgUrl,
-            headers: {
-               'Content-Type': 'application/json',
-      			'Access-Control-Allow-Origin': '*',
-      			'Access-Control-Allow-Methods': 'OPTIONS, GET, POST',
-      			'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
-            }
-      })
-      .then(function(data) {
-         console.log('imgUrl data: ', data);
-         deferred.resolve(data)
-      }, function(error) {
-         deferred.reject(error);
-      });
-      return deferred.promise;
-   };
+   // this.getPic = function() {
+   //
+   //    var deferred = $q.defer();
+   //    var imgUrl =       "http://freeimages.pictures/api/user/5477093893103302/?keyword=landscape[&sources={flickr|wikimedia|pixabay|morguefile|google|openclipart}&format={json}]";
+   //
+   //    $http({
+   //          method: "GET",
+   //          url: imgUrl,
+   //          headers: {
+   //             'Content-Type': 'application/json',
+   //    			'Access-Control-Allow-Origin': '*',
+   //    			'Access-Control-Allow-Methods': 'OPTIONS, GET, POST',
+   //    			'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+   //          }
+   //    })
+   //    .then(function(data) {
+   //       console.log('imgUrl data: ', data);
+   //       deferred.resolve(data)
+   //    }, function(error) {
+   //       deferred.reject(error);
+   //    });
+   //    return deferred.promise;
+   // };
 
       // NASA pics
    // var nasaUrl = (function() {
